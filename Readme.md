@@ -8,7 +8,7 @@
 
 Ở bài đầu tiền thì ta sẽ dùng cấu trúc **unordered_map** để lưu số lần xuất hiện của các số trong dãy gồm n số nguyên ( mỗi màu có bao nhiêu bóng đèn có màu đó ). Sau đó chọn ra mỗi màu một bóng đèn để đạt được kết quả nhiều màu nhất, khi số màu được chọn chưa đủ số k được yêu cầu thì sẽ chọn ngẫu nhiên những bóng đèn còn lại.
 
-```
+``` c++
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -44,7 +44,7 @@ int main() {
 #### Bài 2. Point2D
 
 Ở bài này thì ta sẽ sắp xếp các điểm theo chiều tăng dần của x, nếu các điểm có giá trị x bằng nhau thì sẽ sắp xếp theo chiều giảm dần của y. Ta sẽ sử dụng hàm sort với hàm so sánh **cmp**.
-```
+``` c++
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -72,7 +72,7 @@ int main() {
 #### Bài 3. VS14_Gifts
 
 Ở bài này ta sẽ sử dụng thuật toán **Hai con trỏ** để xử lý nhằm tính được tổng hai món quà có giá trị lớn nhất có thể trong tầm khả năng chi trả.
-```
+``` c++
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -109,7 +109,7 @@ int main() {
 #### Bài 4. PasswordStrength
 
 Với để bài dài nhiều dữ kiện, không dễ dàng để có thể code mà không có sai sót. Mặc dù có nhờ sự hỗ trợ khá nhiều từ ChatGPT.
-```
+``` c++
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -166,7 +166,7 @@ $$
 E(x)=(x+k) mod 26
 $$
 Việc của chúng ta chỉ là mã hóa theo mô tả của đề bài
-```
+``` c++
 #include <iostream>
 #include <string>
 using namespace std;
@@ -196,7 +196,7 @@ int main() {
 #### Bài 6. ReversingEncryption
  
 Ở bài này thì ta sẽ giải mã thuật toán mã hóa để có được chuỗi kí tự ban đầu. Bằng cách đảo ngược lần lượt các chuỗi có độ dài từ 1 đến i với i lần lượt là các ước tăng dần của n.
-```
+``` c++
 #include <iostream>
 #include <string>
 #include <vector>
@@ -226,7 +226,7 @@ int main() {
 #### Bài 7. Messages
 
 Ở bài này ta sẽ tìm xâu con chung dài nhất ở phần cuối chuỗi Sb và phần đầu của chuỗi Se.
-```
+``` c++
 #include <iostream>
 #include <string>
 
@@ -252,7 +252,7 @@ int main() {
 #### Bài 8. Binary_Search1
 
 Đề bài yêu cầu rất rõ là sử dụng thuật toán tìm kiếm nhị phân.
-```
+``` c++
 #include <iostream>
 
 using namespace std;
@@ -289,7 +289,7 @@ int main() {
 #### Bài 9. Binary_Search2
  
 Ta sẽ làm như đề bài yêu cầu
-```
+``` c++
 #include <iostream>
 #include <string>
 using namespace std;
@@ -330,7 +330,7 @@ int main() {
 #### Bài 10. Linear_Search1
 
 Ta vẫn làm như đề bài yêu cầu
-```
+``` c++
 #include <iostream>
 using namespace std;
 
@@ -365,7 +365,7 @@ void linear_search(int a[], int n, int x) {
 #### Bài 11. Linear_Search2
 
 Vẫn như vậy, ta lại làm như đề bài yêu cầu
-```
+``` c++
 #include <iostream>
 
 using namespace std;
@@ -398,7 +398,7 @@ int main() {
 #### Bài 12. Linear_Search3
 
 Ở bài toán này, để in ra n số nguyên tương ứng với MEXᵢ ta sẽ đặt MEX = 0 sau đó lần lượt với mỗi giá trị i ta sẽ tìm giá trị MEX nhỏ nhất chưa xuất hiện tính đến phần tử i
-```
+``` c++
 #include <iostream>
 #include <set>
 using namespace std;
@@ -426,11 +426,9 @@ int main() {
 #### Bài 13. Linear_Search5
 
 Ở bài toán này ta nhận thấy rằng nếu n >= 4 thì tổng trọng số hay dãy lớn nhất sẽ có giá trị là 
-$$
-a[n-1] + a[n-2] - a[0] - a[1]
-$$
+$ a[n-1] + a[n-2] - a[0] - a[1] $
 Nếu n <= 1 thì trọng số sẽ bằng 0
-```
+``` c++
 #include <iostream>
 #include <algorithm>
 
@@ -464,7 +462,7 @@ int main() {
 #### Bài 14. VW05p_Enrichement
 
 Ở bài này thì ý tưởng không có gì đặc biệt, ta sẽ tính tổng các giá trị của các ô vuông 3x3, sau đó chọn ra giá trị nhỏ nhất.
-```
+``` c++
 #include <iostream>
 #include <vector>
 #include <climits>
